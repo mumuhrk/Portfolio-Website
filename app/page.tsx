@@ -29,10 +29,10 @@ export default function Portfolio() {
   const { scrollYProgress } = useScroll()
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"])
   const socialLinks = [
-  { icon: Github, link: "https://github.com/mumuhrk" },
-  { icon: Linkedin, link: "https://linkedin.com/in/สุจินดา-ใจปินตา-bb3811376" },
-  { icon: Mail, link: "mailto:mumuch4321@gmail.com" },
-];
+    { icon: Github, link: "https://github.com/mumuhrk" },
+    { icon: Linkedin, link: "https://linkedin.com/in/สุจินดา-ใจปินตา-bb3811376" },
+    { icon: Mail, link: "mailto:mumuch4321@gmail.com" },
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -91,7 +91,7 @@ export default function Portfolio() {
         duration: 0.5,
       },
     },
-  };
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
@@ -161,10 +161,10 @@ export default function Portfolio() {
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-400 to-pink-400 p-1">
               <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
                 <img
-                    src="https://cdn.discordapp.com/attachments/958400049832943717/1397826515684692069/photo.jpg?ex=688322e3&is=6881d163&hm=ef8ad5583be9605c5ac4a461451732ba99b064b80cfb02de06e22129b1df3f67&"
-                    alt="รูปโปรไฟล์"
-                    className="w-full h-full rounded-full object-cover"
-                    />
+                  src="https://cdn.discordapp.com/attachments/958400049832943717/1397826515684692069/photo.jpg?ex=688322e3&is=6881d163&hm=ef8ad5583be9605c5ac4a461451732ba99b064b80cfb02de06e22129b1df3f67&"
+                  alt="รูปโปรไฟล์"
+                  className="w-full h-full rounded-full object-cover"
+                />
               </div>
             </div>
           </motion.div>
@@ -176,9 +176,7 @@ export default function Portfolio() {
             transition={{ delay: 0.7, duration: 0.8 }}
           >
             สุจินดา{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-              ใจปินตา
-            </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">ใจปินตา</span>
           </motion.h1>
 
           <motion.p
@@ -203,8 +201,12 @@ export default function Portfolio() {
             >
               View My Work
             </Button>
-            <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 bg-transparent"
-            onClick={() => scrollToSection("languages")}>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-white/20 text-white hover:bg-white/10 bg-transparent"
+              onClick={() => scrollToSection("languages")}
+            >
               <Mail className="mr-2 h-4 w-4" />
               Contact Me
             </Button>
@@ -256,7 +258,7 @@ export default function Portfolio() {
                   degree: "ประถมศึกษา",
                   school: "โรงเรียนอนุบาลเชียงใหม่",
                   year: "2008 – 2013",
-                  gpa: "3.45/4.0",                
+                  gpa: "3.45/4.0",
                 },
                 {
                   degree: "มัธยมศึกษาตอนต้น",
@@ -323,32 +325,42 @@ export default function Portfolio() {
               {[
                 {
                   category: "Language",
-                  skills: ["C", "C++", "TypeScript", "JavaScript (JS)", "Dart" , "VB.NET"],
+                  skills: ["C", "C++", "TypeScript", "JavaScript (JS)", "Dart", "VB.NET"],
                   color: "from-blue-500 to-cyan-500",
                 },
                 {
                   category: "Web & API Development",
-                  skills: ["HTML", "CSS", "Bootstrap", "Tailwind CSS", "Flask (Python)" , "Node.js" , "Express.js" , "RESTful API" , "LINE Messaging API"  ],
+                  skills: [
+                    "HTML",
+                    "CSS",
+                    "Bootstrap",
+                    "Tailwind CSS",
+                    "Flask (Python)",
+                    "Node.js",
+                    "Express.js",
+                    "RESTful API",
+                    "LINE Messaging API",
+                  ],
                   color: "from-green-500 to-emerald-500",
                 },
                 {
                   category: "Mobile App",
-                  skills: ["Flutter", "Dart" ],
+                  skills: ["Flutter", "Dart"],
                   color: "from-orange-500 to-red-500",
                 },
                 {
                   category: "Databases",
-                  skills: ["MYSql", "SQLite", "Supabase" ],
+                  skills: ["MYSql", "SQLite", "Supabase"],
                   color: "from-purple-500 to-pink-500",
                 },
                 {
                   category: "DevOps",
-                  skills: ["Vercel", "Docker", "Photoshop", "Git & GitHub", "ngrok" , "n8n" ],
+                  skills: ["Vercel", "Docker", "Photoshop", "Git & GitHub", "ngrok", "n8n"],
                   color: "from-pink-500 to-rose-500",
                 },
                 {
                   category: "AI",
-                  skills: ["OpenCV", "YOLO v11", "ResNet", "Numpy", "Pillow" , "Roboflow" ],
+                  skills: ["OpenCV", "YOLO v11", "ResNet", "Numpy", "Pillow", "Roboflow"],
                   color: "from-indigo-500 to-purple-500",
                 },
               ].map((skillGroup, index) => (
@@ -396,8 +408,7 @@ export default function Portfolio() {
                   title: "ฝึกงาน",
                   company: "ท่าอากาศยานเชียงใหม่",
                   period: "2020",
-                  description:
-                    "ฝึกงานตอนปวชในแผนก IT",                 
+                  description: "ฝึกงานตอนปวชในแผนก IT",
                 },
               ].map((exp, index) => (
                 <motion.div key={index} variants={itemVariants}>
@@ -415,8 +426,7 @@ export default function Portfolio() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-white/80 mb-4">{exp.description}</p>
-                      <div className="space-y-2">                       
-                      </div>
+                      <div className="space-y-2"></div>
                     </CardContent>
                   </Card>
                 </motion.div>
@@ -441,7 +451,8 @@ export default function Portfolio() {
                   title: "ระบบแจ้งเตือนมิเตอร์น้ำผ่าน LINE Bot , API , Web application ",
                   description: "Project ป.ตรี",
                   tech: ["TypeScript", "Tailwind CSS", "Supabase"],
-                  image: "https://media.discordapp.net/attachments/958400049832943717/1397822715020181675/image.png?ex=68831f59&is=6881cdd9&hm=36e1080f1169726f3e36134768c0bc35afbe351d5a02e652bc4031eff2f838bc&=&format=webp&quality=lossless&width=1678&height=846",
+                  image:
+                    "https://media.discordapp.net/attachments/958400049832943717/1397822715020181675/image.png?ex=68831f59&is=6881cdd9&hm=36e1080f1169726f3e36134768c0bc35afbe351d5a02e652bc4031eff2f838bc&=&format=webp&quality=lossless&width=1678&height=846",
                   github: "https://github.com/mumuhrk/Water-API-WEB",
                   demo: "https://water-api-web.vercel.app/",
                 },
@@ -449,7 +460,8 @@ export default function Portfolio() {
                   title: "ระบบเว็บไซต์แจ้งซ่อมคอมพิวเตอร์ กรณีศึกษา คอมพิวเตอร์อินดี้ จ.ตาก",
                   description: "Project ปวส",
                   tech: ["VB.NET", "MySQL", "CSS", "HTML"],
-                  image: "https://media.discordapp.net/attachments/958400049832943717/1397824519472812112/image.png?ex=68832107&is=6881cf87&hm=b6909949c888e9efc1b3ecb6bc519e3697ab5f7b52d95789d0e9a8b7fe5216db&=&format=webp&quality=lossless&width=1752&height=846",
+                  image:
+                    "https://media.discordapp.net/attachments/958400049832943717/1397824519472812112/image.png?ex=68832107&is=6881cf87&hm=b6909949c888e9efc1b3ecb6bc519e3697ab5f7b52d95789d0e9a8b7fe5216db&=&format=webp&quality=lossless&width=1752&height=846",
                   github: "https://github.com/mumuhrk/ComputerIndy",
                   demo: "#",
                 },
@@ -457,43 +469,53 @@ export default function Portfolio() {
                   title: "เกมส์เอาชีวิตรอดจากเกาะปริศนาคอมพิวเตอร์",
                   description: "Project ปวช",
                   tech: ["RPG Maker"],
-                  image: "https://media.discordapp.net/attachments/958400049832943717/1397809750166601758/Screenshot_2025-07-24_121632.png?ex=68831346&is=6881c1c6&hm=995ed7fa624458bb27e6cd28e560f56992b099698b8b7615643b7dc0ba31ebbd&=&format=webp&quality=lossless&width=1158&height=893",
+                  image:
+                    "https://media.discordapp.net/attachments/958400049832943717/1397809750166601758/Screenshot_2025-07-24_121632.png?ex=68831346&is=6881c1c6&hm=995ed7fa624458bb27e6cd28e560f56992b099698b8b7615643b7dc0ba31ebbd&=&format=webp&quality=lossless&width=1158&height=893",
                   github: "https://github.com/mumuhrk/RPG-maker-Game",
                   demo: "#",
                 },
               ].map((project, index) => (
                 <motion.div key={index} variants={itemVariants}>
                   <Card className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 overflow-hidden">
-                  <div className="relative overflow-hidden">
-                <img
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-300"
-                />
-            </div>
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={project.image || "/placeholder.svg"}
+                        alt={project.title}
+                        className="w-full h-48 object-cover transition-transform duration-300"
+                      />
+                    </div>
                     <CardHeader>
                       <CardTitle className="text-white">{project.title}</CardTitle>
-                        <CardDescription className="text-white/70">{project.description}</CardDescription>
-                    <div className="mt-4 flex space-x-2">
-                     {project.github && (
-                      <Button asChild size="sm" variant="secondary">
-                        <a href={project.github} target="_blank" rel="noopener noreferrer">
-                        <Github className="w-4 h-4 mr-2" />
-                         Code
-                        </a>
-                      </Button>
-                      )}
-                      {project.demo && (
-                      <Button asChild size="sm" variant="secondary">
-                        <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        Demo
-                        </a>
-                      </Button>
-                      )}
-                    </div>
+                      <CardDescription className="text-white/70">{project.description}</CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {project.tech.map((tech, techIndex) => (
+                          <Badge key={techIndex} variant="secondary" className="bg-blue-500/20 text-blue-300">
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                      <div className="flex space-x-2">
+                        {project.github && (
+                          <Button asChild size="sm" variant="secondary">
+                            <a href={project.github} target="_blank" rel="noopener noreferrer">
+                              <Github className="w-4 h-4 mr-2" />
+                              Code
+                            </a>
+                          </Button>
+                        )}
+                        {project.demo && (
+                          <Button asChild size="sm" variant="secondary">
+                            <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                              <ExternalLink className="w-4 h-4 mr-2" />
+                              Demo
+                            </a>
+                          </Button>
+                        )}
+                      </div>
                     </CardContent>
-                    </Card>
+                  </Card>
                 </motion.div>
               ))}
             </div>
@@ -642,8 +664,7 @@ export default function Portfolio() {
                   journal: "IEEE Computer Society",
                   date: "2025",
                   type: "Research Paper",
-                  description:
-                    "ตีพิมพ์ก่อน ตุลาคม 2025",
+                  description: "ตีพิมพ์ก่อน ตุลาคม 2025",
                 },
               ].map((pub, index) => (
                 <motion.div key={index} variants={itemVariants}>
@@ -697,7 +718,7 @@ export default function Portfolio() {
                         <div className="flex justify-between text-sm">
                           <span className="text-white/70">Proficiency</span>
                           <span className="text-white/70">{lang.proficiency}%</span>
-                        </div>                     
+                        </div>
                         <div className="w-full bg-white/10 rounded-full h-2">
                           <motion.div
                             className="bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full"

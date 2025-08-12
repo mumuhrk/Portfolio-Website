@@ -161,7 +161,7 @@ export default function Portfolio() {
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-purple-400 to-pink-400 p-1">
               <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
                 <img
-                  src="https://cdn.discordapp.com/attachments/958400049832943717/1397826515684692069/photo.jpg?ex=688322e3&is=6881d163&hm=ef8ad5583be9605c5ac4a461451732ba99b064b80cfb02de06e22129b1df3f67&"
+                  src="https://i.ibb.co/fz9fn09s/photo.jpg"
                   alt="รูปโปรไฟล์"
                   className="w-full h-full rounded-full object-cover"
                 />
@@ -452,7 +452,7 @@ export default function Portfolio() {
                   description: "Project ป.ตรี",
                   tech: ["TypeScript", "Tailwind CSS", "Supabase"],
                   image:
-                    "https://media.discordapp.net/attachments/958400049832943717/1397822715020181675/image.png?ex=68831f59&is=6881cdd9&hm=36e1080f1169726f3e36134768c0bc35afbe351d5a02e652bc4031eff2f838bc&=&format=webp&quality=lossless&width=1678&height=846",
+                    "https://i.ibb.co/93vjp8Ph/image.png",
                   github: "https://github.com/mumuhrk/Water-API-WEB",
                   demo: "https://water-api-web.vercel.app/",
                 },
@@ -461,7 +461,7 @@ export default function Portfolio() {
                   description: "Project ปวส",
                   tech: ["VB.NET", "MySQL", "CSS", "HTML"],
                   image:
-                    "https://media.discordapp.net/attachments/958400049832943717/1397824519472812112/image.png?ex=68832107&is=6881cf87&hm=b6909949c888e9efc1b3ecb6bc519e3697ab5f7b52d95789d0e9a8b7fe5216db&=&format=webp&quality=lossless&width=1752&height=846",
+                    "https://i.ibb.co/nqW12NMd/image.png",
                   github: "https://github.com/mumuhrk/ComputerIndy",
                   demo: "#",
                 },
@@ -470,7 +470,7 @@ export default function Portfolio() {
                   description: "Project ปวช",
                   tech: ["RPG Maker"],
                   image:
-                    "https://media.discordapp.net/attachments/958400049832943717/1397809750166601758/Screenshot_2025-07-24_121632.png?ex=68831346&is=6881c1c6&hm=995ed7fa624458bb27e6cd28e560f56992b099698b8b7615643b7dc0ba31ebbd&=&format=webp&quality=lossless&width=1158&height=893",
+                    "https://i.ibb.co/gbvdvhb5/image.png",
                   github: "https://github.com/mumuhrk/RPG-maker-Game",
                   demo: "#",
                 },
